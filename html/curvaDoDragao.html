@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curva de Dragão</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #222;
+        color: white;
+        display: flex;
+      }
+
+      canvas {
+        width: 700px;
+        height: 700px;
+        margin: 100px;
+      }
+
+      #botoes {
+        display: flex;
+        gap: 2%;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="botoes">
+      <div
+        style="display: flex; flex-direction: column; max-width: fit-content"
+      >
+        <button id="plusIteracoes">Aumentar iterações</button>
+        <button id="minusIteracoes">Diminuir iterações</button>
+        <span id="iteracoes">Número de iterações: </span>
+      </div>
+
+      <div
+        style="display: flex; flex-direction: column; max-width: fit-content"
+      >
+        <button id="plusTempo">Aumentar tempo entre as iterações</button>
+        <button id="minusTempo">Diminuir tempo entre as iterações</button>
+        <span id="tempo">Tempo entre cada iteração: </span>
+      </div>
+      <div style="height: fit-content">
+        <button id="start">Começar!</button>
+      </div>
+    </div>
+    <canvas id="dragonCurveCanvas"></canvas>
+  </body>
+  <script src="../js/dragon.js" type="module"></script>
+</html>
